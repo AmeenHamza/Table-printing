@@ -24,7 +24,7 @@
             const endRange = parseInt(prompt("Enter the end range (2 to 20):"));
 
             if (isNaN(startRange) || isNaN(endRange) || startRange < 2 || endRange > 20 || startRange > endRange) {
-                console.log("Invalid input. Range must be between 2 and 20.");
+                printMultiplicationTables(startRange, 20);
             } else {
                 printMultiplicationTables(startRange, endRange);
             }
